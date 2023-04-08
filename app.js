@@ -10,6 +10,7 @@ import nodemailer from "nodemailer";
 import * as uuid from "uuid";
 import fs from "node:fs";
 import bcrypt from "bcrypt";
+import basicAuth from "express-basic-auth";
 
 const PORT = process.env.PORT || 3000;
 const __dirname = process.cwd();
@@ -42,6 +43,16 @@ app.use(
     extended: true
   })
 );
+
+const credentials = {
+  users: { 'test': '123' },
+  challenge: true,
+  unauthorizedResponse: (req) => {
+    return 'Invalid Credentials Provided. In order to recieve the correct credentials, join https://discord.gg/thingsnetwork';
+  }
+};
+
+app.use(basicAuth(credentials));
 
 // Verification
 app.patch("/generate-otp", async (req, res) => {

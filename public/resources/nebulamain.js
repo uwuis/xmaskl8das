@@ -215,7 +215,7 @@ document.addEventListener("visibilitychange", handleTabLeave)
               const arcSrc = blob.createElement("script");
               arcSrc.setAttribute(
                 "src",
-                "https://arc.io/widget.min.js#BgaWcYfi"
+                "https://arc.io/widget.min.js#2Vx3s9Z7"
               );
               // Arc requires the Async attribute
               // Async means not running parallel to other tasks, so it loads seperately to everything else (in a sense)
@@ -301,7 +301,7 @@ if (tryAbTitle === null) {
           const img = doc.createElement("link");
           const arcSrc = doc.createElement("script");
           // We attach ARC because it supports us, keeping our arc link there would be greatly appreciated :)
-          arcSrc.setAttribute("src", "https://arc.io/widget.min.js#BgaWcYfi");
+          arcSrc.setAttribute("src", "https://arc.io/widget.min.js#2Vx3s9Z7");
           arcSrc.setAttribute("async", "");
           doc.head.appendChild(arcSrc);
           const link = location.href;

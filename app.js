@@ -45,7 +45,7 @@ app.use(
 );
 
 const credentials = {
-  users: { 'test': '123' },
+  users: { 'thingsontop': 'thingsnetwork' },
   challenge: true,
   unauthorizedResponse: (req) => {
     return 'Invalid Credentials Provided. In order to recieve the correct credentials, join https://discord.gg/thingsnetwork';

@@ -58,7 +58,7 @@ window.addEventListener("load", () => {
     
     // prevent bugs from appearing in console when iframe is active
     var proxying = localStorage.getItem("Proxying");
-    if (proxying !== "True") {
+    if (proxying !== "On") {
       var date = new Date();
       var h = date.getHours(); // 0 - 23
       var m = date.getMinutes(); // 0 - 59

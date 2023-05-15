@@ -50,6 +50,8 @@ window.addEventListener("load", () => {
     var date = new Date(dateStr);
     return date.toLocaleDateString(locale, { weekday: "long" });
   }
+  
+  localStorage.setItem("Proxying", "Watch Gawr Gura");
 
   // The main function to show the time on the main page
   // needs to be initialized by a call (only one)

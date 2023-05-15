@@ -2,7 +2,6 @@ importScripts("./uv/uv.bundle.js");
 importScripts("./uv/uv.config.js");
 importScripts("./uv/uv.sw.js");
 importScripts("./osana/osana.worker.js");
-importScripts("https://arc.io/arc-sw-core.js");
 
 const UV = new UVServiceWorker();
 const Osana = new OsanaServiceWorker();
